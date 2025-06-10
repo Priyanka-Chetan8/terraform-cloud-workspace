@@ -1,2 +1,2 @@
-# terraform-cloud-workspace
-For cloud terraform testing
+# terraform-pratice-workspace
+For cloud terraform learning
