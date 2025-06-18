@@ -1,0 +1,128 @@
+1. What is the correct Terraform type for this value: ["t2.micro", "t3.micro"]?
+A) list(string)
+B) set(string)
+C) map(string)
+D) tuple
+
+Answer: A
+
+2. Which of the following is a valid map in Terraform?
+A) ["key" = "value"]
+B) {"key": "value"}
+C) map("key", "value")
+D) {key = "value"}
+
+Answer: D
+
+
+3. What is the default Terraform data type for "true" (as a string)?
+A) bool
+B) string
+C) number
+D) any
+(Note: "true" is a string, not a boolean.)
+
+Answer: A
+
+
+4. Which data type is best for a collection of unique strings?
+A) list(string)
+B) map(string)
+C) set(string)
+D) tuple(string)
+
+Answer: C
+
+5. What will type([1, "two", true]) return in Terraform?
+A) tuple([number, string, bool])
+B) list(any)
+C) tuple(any)
+D) invalid
+
+Answer: A
+
+6. What is the purpose of variables.tf in a Terraform project?
+A) To define and assign default values to variables
+B) To store backend configuration
+C) To override values defined in terraform.tfvars
+D) To store the current state of infrastructure
+
+Answer: A
+
+
+7. Which file is typically used to assign values to variables defined in variables.tf?
+A) main.tf
+B) terraform.tfstate
+C) terraform.tfvars
+D) backend.tf
+
+Answer: C
+
+
+8. What will happen if a required variable has no default value and is not passed via CLI or .tfvars?
+A) Terraform assigns it a null value
+B) Terraform fails with an error and prompts for input
+C) Terraform uses a random value
+D) Terraform uses the name of the variable as its value
+
+Answer: B
+
+9. Which command allows you to manually pass a variable value when running Terraform?
+A) terraform init -var
+B) terraform plan -var="instance_type=t2.micro"
+C) terraform apply -input=false
+D) terraform validate -var-file="myvars.tf"
+
+Answer: B
+
+10. What is stored in the terraform.tfstate file?
+A) The list of variable definitions
+B) The execution plan
+C) The current state of infrastructure as known by Terraform
+D) Resource documentation
+
+Answer: C
+
+11. Why is it important to secure your terraform.tfstate file?
+A) It contains source code
+B) It includes provider credentials
+C) It may contain sensitive data such as passwords or secrets
+D) It can be safely ignored
+
+Answer: C
+
+
+12. Which of the following file types can be used to define variable values?
+(Select all that apply)
+
+A) .tfvars
+B) .json
+C) .tf
+D) .yaml
+
+Answer: A
+
+13. What is the default name of the file Terraform looks for to load variable values automatically?
+A) terraform.tfvars
+B) variables.tf
+C) inputs.tf
+D) default.tf
+
+Answer: A
+
+
+14. What does Terraform do when the actual infrastructure doesn't match the state file?
+A) It reinitializes the project
+B) It imports the changes
+C) It displays the differences in a plan
+D) It throws a syntax error
+
+Answer: B
+
+15. If a variable is defined in both terraform.tfvars and CLI using -var, which one takes precedence?
+A) .tfvars
+B) The value in variables.tf
+C) The CLI flag
+D) Whichever is defined first
+
+Answer: C
