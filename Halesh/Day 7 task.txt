@@ -1,0 +1,60 @@
+1. What is the correct Terraform type for this value: ["t2.micro", "t3.micro"]?
+A) list(string)
+
+
+2. Which of the following is a valid map in Terraform?
+D) {key = "value"}
+
+
+3. What is the default Terraform data type for "true" (as a string)?
+B) string
+
+
+4. Which data type is best for a collection of unique strings?
+C) set(string)
+
+
+5. What will type([1, "two", true]) return in Terraform?
+A) tuple([number, string, bool])
+
+
+6. What is the purpose of variables.tf in a Terraform project?
+A) To define and assign default values to variables
+
+7. Which file is typically used to assign values to variables defined in variables.tf?
+C) terraform.tfvars
+
+8. What will happen if a required variable has no default value and is not passed via CLI or .tfvars?
+B) Terraform fails with an error and prompts for input
+
+
+9. Which command allows you to manually pass a variable value when running Terraform?
+B) terraform plan -var="instance_type=t2.micro"
+
+
+10. What is stored in the terraform.tfstate file?
+C) The current state of infrastructure as known by Terraform
+
+
+11. Why is it important to secure your terraform.tfstate file?
+C) It may contain sensitive data such as passwords or secrets
+
+
+12. Which of the following file types can be used to define variable values?
+(Select all that apply)
+
+A) .tfvars
+B) .json
+C) .tf
+
+
+13. What is the default name of the file Terraform looks for to load variable values automatically?
+B) variables.tf
+
+
+14. What does Terraform do when the actual infrastructure doesn't match the state file?
+C) It displays the differences in a plan
+
+
+15. If a variable is defined in both terraform.tfvars and CLI using -var, which one takes precedence?
+C) The CLI flag
