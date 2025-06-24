@@ -1,0 +1,9 @@
+launch_instance = "true"
+create_bucket   = "true"
+environment     = "Dev"
+role            = "WebServer"
+instance_count  = "02"
+ami             = "ami-0f3f13f145e66a0a3"
+instance_type   = "t2.micro"
+allowed_ports   = ["22", "80", "443"]
+vpc_id          = "vpc-044309def0c09b51e"
